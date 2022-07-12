@@ -23,6 +23,8 @@ namespace Pagamento
             Console.WriteLine("REALIZANDO PAGAMENTO!");
             Console.ForegroundColor = ConsoleColor.Black;
 
+            // O comando é uma intenção de modificação o Evento não.
+            // por este motivo não podemos aplicar a regra de negocio aqui
             _bus.Send(new RealizarPagamentoCommand { AggregateRoot = message.AggregateRoot }).Wait();
 
             return Task.CompletedTask;

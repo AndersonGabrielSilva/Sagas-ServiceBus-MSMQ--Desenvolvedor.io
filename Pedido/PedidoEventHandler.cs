@@ -8,6 +8,9 @@ namespace Pedido
     public class PedidoEventHandler :
         IHandleMessages<PedidoRealizadoEvent>
     {
+
+        //Este evento pode ser manipulado por varios handlers, não necessariamente somente pelo pedidoEventHabndler
+        //como por exemplo o "PedidoRealizadoEvent", ele é utilizado lá em Pedido Saga Tambem
         public Task Handle(PedidoRealizadoEvent message)
         {
             Console.ForegroundColor = ConsoleColor.Yellow;
