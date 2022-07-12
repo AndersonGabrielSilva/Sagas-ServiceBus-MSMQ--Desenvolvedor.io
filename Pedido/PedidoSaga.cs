@@ -10,7 +10,8 @@ namespace Pedido
 {
     #region Aanotaçoes sobre Saga
     /* Saga:
-       Saga só faz zentido em um ambiente de microserviçoes.
+       Saga só faz sentido em um ambiente de microserviçoes.
+       Saga nada mais é do que um Process Manager (Gerenciador de Processos).
      */
     #endregion
 
